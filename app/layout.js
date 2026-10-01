@@ -20,10 +20,15 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const montserrat = localFont({
+  src: "./fonts/Montserrat-Regular.woff",
+  variable: "--font-montserrat",
+  weight: "400",
+});
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${babylonica.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${babylonica.variable} ${montserrat.variable}`}>
         {children}
       </body>
     </html>
